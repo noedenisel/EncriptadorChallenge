@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Encriptador de texto</title>
+ <link rel="stylesheet"  href="styles.css">
+</head>
+<body> 
+  <div id="vector"><img src="Vector.png" alt=""></div>
+  <div class="container">
+    <div id="encriptador">
+      <div>
+          <textarea id="input">Ingrese el texto aqui</textarea>
+      </div>  
+      <div>
+	      <button onclick="encrypt()">Encriptar</button>
+	      <button onclick="decrypt()">Desencriptar</button>
+      </div>
+    </div>
+
+    <div id="resultado">
+        <label for="output"></label>	
+        <textarea id="output"></textarea>
+          <button onclick="copyToClipboard()">Copiar</button>
+    </div>
+  </div>
+  
+	<script src="script.js"></script>
+</body>
+</html>
