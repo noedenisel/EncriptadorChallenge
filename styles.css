@@ -1,9 +1,10 @@
-body{
-    position: relative;
-    width: 1440px;
-    height: 1024px;
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     background: #F3F5FC;
-}
+  }
+  
 .logo{
     display: flex;
     flex-direction: column;
@@ -27,7 +28,7 @@ body{
 
 
 #input {
-    position: absolute;
+    position: absolute; 
     width: 577px;
     height: 48px;
     left: 240px;
@@ -38,6 +39,8 @@ body{
     font-size: 32px;
     line-height: 150%;
     color: #0A3871;
+    height: auto;
+  overflow: hidden;
 }
 
 .frame1{
@@ -153,6 +156,8 @@ flex-grow: 1;
 
 .rectangle1{
     position: absolute;
+    justify-content: center;
+    align-content: center;
 width: 400px;
 height: 944px;
 left: 1000px;
@@ -160,26 +165,30 @@ top: 40px;
 background: #FFFFFF;
 box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 border-radius: 32px;
+
 }
 
-
-label {
-}
-
-/* #output {
-    position: absolute;
+#output {
 width: 336px;
 height: 781px;
 left: 1032px;
 top: 72px;
+
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
 line-height: 150%;
-color: #495057;
-} */
+/* or 36px */
 
+
+/* Gray/gray-400 */
+
+color: #495057;
+    resize: none;
+    min-height: 100px;
+  }
+  
 .btnCopiar{
     box-sizing: border-box;
     display: flex;
@@ -210,6 +219,11 @@ color: #495057;
     flex: none;
     order: 0;
     flex-grow: 1;
+}
+
+textarea {
+    background-color: transparent;
+    border: none;
 }
 
 /* Media queries

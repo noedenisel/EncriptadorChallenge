@@ -26,3 +26,17 @@ function copyToClipboard() {
   alert('El texto ha sido copiado al portapapeles.');
 }
 
+
+let output = document.getElementById('output');
+
+output.addEventListener('input', () => {
+  output.style.height = 'auto';
+  output.style.height = output.scrollHeight + 'px';
+});
+
+let input = document.getElementById('input');
+
+input.addEventListener('input', () => {
+  input.style.height = 'auto';
+  input.style.height = input.scrollHeight + 'px';
+});
