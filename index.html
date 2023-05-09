@@ -6,25 +6,39 @@
  <link rel="stylesheet"  href="styles.css">
 </head>
 <body> 
-  <div id="vector"><img src="Vector.png" alt=""></div>
-  <div class="container">
-    <div id="encriptador">
-      <div>
-          <textarea id="input">Ingrese el texto aqui</textarea>
-      </div>  
-      <div>
-	      <button onclick="encrypt()">Encriptar</button>
-	      <button onclick="decrypt()">Desencriptar</button>
-      </div>
+  <div class="logo">
+    <img src="Vector.png" alt="" id="vector">
+  </div>
+
+  <div id="encriptador">
+    <textarea id="input">Ingrese el texto aqui</textarea>
+  </div>
+
+  <div class="frame1">
+    <img src="!.png" alt="" class="infoVector">
+        <span class="info">Solo letras minusculas y sin acentos</span>
+  </div> 
+      
+  <div class="frame3">
+	  <button onclick="encrypt()" class="btnEncriptar">
+      <span class="txtEncriptar">Encriptar</span></button>
+	  <button onclick="decrypt()" class="btnDesencriptar">
+      <span class="txtDesencriptar">
+        Desencriptar
+      </span>
+    </button>
+  </div>
+   
+  <div class="rectangle1" id="resultado">
+    <textarea id="output"></textarea>
+  
     </div>
 
-    <div id="resultado">
-        <label for="output"></label>	
-        <textarea id="output"></textarea>
-          <button onclick="copyToClipboard()">Copiar</button>
-    </div>
+  <div>
+    <button onclick="copyToClipboard()" class="btnCopiar">
+    <span class="txtCopiar">Copiar</span></button>
   </div>
-  
+    
 	<script src="script.js"></script>
 </body>
 </html>

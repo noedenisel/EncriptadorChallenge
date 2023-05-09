@@ -1,61 +1,218 @@
-body {
-    background-color: #F3F5FC;
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F3F5FC;
 }
-
-/* Contenedor principal */
-.container {
+.logo{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
-   
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
 }
 
-/* Encriptador */
-#encriptador {
-    flex-grow: 1;
-    padding: 20px;
-    box-sizing: border-box; 
-   
+#vector{
+    position: absolute;
+    left: 36.67%;
+    right: 37.43%;
+    top: 0%;
+    bottom: 0%;
 }
+
 
 #input {
-    width: 100%;
-    min-height: 100px;
-    background-color: #F3F5FC;
-    border: none;
-    outline: none;
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
 }
 
-
-
-/* Resultado */
-#resultado {
-    flex-grow: 1;
-    padding: 20px;
-    box-sizing: border-box;
+.frame1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
 }
+
+.vectorInfo{
+width: 16px;
+width: 16px;
+height: 16px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.info{
+    width: 205px;
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.frame3{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+position: absolute;
+width: 680px;
+height: 67px;
+left: 240px;
+top: 885px;
+}
+
+.btnEncriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.txtEncriptar{
+    width: 280px;
+height: 19px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #FFFFFF;
+flex: none;
+order: 0;
+flex-grow: 1;
+}
+
+.btnDesencriptar{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+width: 328px;
+height: 67px;
+background: #D8DFE8;
+border: 1px solid #0A3871;
+border-radius: 24px;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.txtDesencriptar{
+width: 280px;
+height: 19px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #0A3871;
+flex: none;
+order: 0;
+flex-grow: 1;
+}
+
+.rectangle1{
+    position: absolute;
+width: 400px;
+height: 944px;
+left: 1000px;
+top: 40px;
+background: #FFFFFF;
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 32px;
+}
+
 
 label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
 }
 
-#output {
-    width: 100%;
-    min-height: 100px;
+/* #output {
+    position: absolute;
+width: 336px;
+height: 781px;
+left: 1032px;
+top: 72px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+color: #495057;
+} */
+
+.btnCopiar{
     box-sizing: border-box;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    resize: none;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 1032px;
+    top: 885px;
+    background: #FFFFFF;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
 }
 
+.txtCopiar{
+    width: 288px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
 
-/* Media queries */
+/* Media queries
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -65,7 +222,7 @@ label {
         flex-grow: 0;
         width: 100%;
     }
-}
+} */
 
 
     
