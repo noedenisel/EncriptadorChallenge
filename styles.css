@@ -155,9 +155,11 @@ flex-grow: 1;
 }
 
 .rectangle1{
-    position: absolute;
-    justify-content: center;
-    align-content: center;
+  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 width: 400px;
 height: 944px;
 left: 1000px;
@@ -168,22 +170,78 @@ border-radius: 32px;
 
 }
 
+.ocultar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+.muñeco{
+width: 336px;
+height: 304px;
+left: 1032px;
+top: 283px;
+}
+
+.frame5{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 336px;
+    height: 122px;
+    left: 1032px;
+    top: 619px;
+}
+
+.sintxt{
+    width: 336px;
+height: 58px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+text-align: center;
+color: #343A40;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.ingresartxt{
+    width: 336px;
+height: 48px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: #495057;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+
 #output {
 width: 336px;
 height: 781px;
 left: 1032px;
 top: 72px;
-
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
 line-height: 150%;
-/* or 36px */
-
-
-/* Gray/gray-400 */
-
 color: #495057;
     resize: none;
     min-height: 100px;
