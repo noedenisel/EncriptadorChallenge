@@ -1,6 +1,10 @@
 # Encriptador y Desencriptador de Texto
 
 Este proyecto se realizo para el curso de Alura. 
+
+deploy:  https://noedenisel.github.io/EncriptadorChallenge/
+ 
+#challengecodificador5
 Consiste en una aplicación que encripta y desencripta textos utilizando las siguientes llaves de encriptación:
 
 - La letra "e" es convertida para "enter"
@@ -26,6 +30,4 @@ Además de la creación del código HTML y su lógica, para los estilos se nos d
 - CSS
 - JavaScript
  
-deploy:  https://noedenisel.github.io/EncriptadorChallenge/
- 
- #challengecodificador5
+
